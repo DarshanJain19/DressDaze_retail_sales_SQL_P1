@@ -30,62 +30,31 @@ Listing all available product categories
 📊 Key Business Questions Answered
 The following insights were derived using SQL:
 
-Sales on a specific date
-→ All transactions on '2022-11-05'
-
-Category-based filtering
-→ Clothing category sales with quantity > 4 in November 2022
-
-Category-wise total sales
-→ SUM of total_sale grouped by category
-
-Average age of Beauty category buyers
-
-High-value transactions
-→ Sales where total_sale > 1000
-
-Gender & Category-based transaction count
-
-Monthly average sale & best-selling month per year
-
-Top 5 customers by total sales
-
-Unique customers by category
-
-Sales shifts analysis
-→ Categorized by Morning, Afternoon, and Evening shifts based on sale_time
-
-✅ Sample Query Highlight
-sql
-Copy
-Edit
-SELECT category, SUM(total_sale) as total_sales
-FROM retail_sales
-GROUP BY category;
-This returns the total sales generated per product category.
+-- Q.1 Write a SQL query to retrieve all columns for sales made on '2022-11-05
+-- Q.2 Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022
+-- Q.3 Write a SQL query to calculate the total sales (total_sale) for each category.
+-- Q.4 Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.
+-- Q.5 Write a SQL query to find all transactions where the total_sale is greater than 1000.
+-- Q.6 Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.
+-- Q.7 Write a SQL query to calculate the average sale for each month. Find out best selling month in each year
+-- Q.8 Write a SQL query to find the top 5 customers based on the highest total sales 
+-- Q.9 Write a SQL query to find the number of unique customers who purchased items from each category.
+-- Q.10 Write a SQL query to create each shift and number of orders (Example Morning <=12, Afternoon Between 12 & 17, Evening >17)
 
 📈 Outcome
-This project helps in understanding:
-
-Customer purchasing behavior
-
-Product category performance
-
-Time-based sales patterns
-
-Key performance metrics for business decisions
+-This project helps in understanding:
+-Customer purchasing behavior
+-Product category performance
+-Time-based sales patterns
+-Key performance metrics for business decisions
 
 🙋‍♂️ Author
 Darshan Jain
 B.Tech CSE Student | Aspiring Data Analyst
-📧 [Add your email]
-🔗 [Add your LinkedIn or Portfolio]
+📧 darshanjain1904@gmail.com
+🔗 linkedin.com/in/darshanjain19
 
 ⭐️ How to Use
-Clone this repo
-
-Import the CSV into your local SQL database
-
-Run the SQL script step-by-step to see the analysis
-
-Let me know if you'd like a project thumbnail image, badges, or Markdown formatting tips for GitHub.
+-Clone this repo
+-Import the CSV into your local SQL database
+-Run the SQL script step-by-step to see the analysis.
